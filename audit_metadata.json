@@ -1,0 +1,52 @@
+{
+  "source_repo": "certbot/certbot",
+  "source_url": "https://github.com/certbot/certbot",
+  "audit_date": "2026-11-09T10:01:47.793903",
+  "scanner_version": "1.3.0",
+  "findings_count": 5,
+  "severity_breakdown": {
+    "HIGH": 5
+  },
+  "findings": [
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "certbot-dns-gehirn/src/certbot_dns_gehirn/_internal/tests/dns_gehirn_test.py",
+      "line": 16
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "certbot-dns-gehirn/src/certbot_dns_gehirn/_internal/tests/dns_gehirn_test.py",
+      "line": 17
+    },
+    {
+      "id": "PY-PATH-001",
+      "name": "Path traversal via unsanitized input",
+      "severity": "HIGH",
+      "cwe": "CWE-22",
+      "file": "certbot/src/certbot/reverter.py",
+      "line": 207
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "certbot-dns-cloudflare/src/certbot_dns_cloudflare/_internal/tests/dns_cloudflare_test.py",
+      "line": 35
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "certbot-dns-cloudflare/src/certbot_dns_cloudflare/_internal/tests/dns_cloudflare_test.py",
+      "line": 37
+    }
+  ]
+}
